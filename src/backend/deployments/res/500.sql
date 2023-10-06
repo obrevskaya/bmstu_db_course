@@ -1,0 +1,1 @@
+copy order_elements (id_order,id_wine,count) from '/data/500.csv' delimiter ',' csv;

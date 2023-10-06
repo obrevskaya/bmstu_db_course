@@ -1,0 +1,16 @@
+PG:
+  Host: localhost
+  Port: 5435
+  User: wintrigue
+  Password: password
+  DBName: wintrigue
+
+HTTPPort: 8081
+AdminLogin: admin
+AdminPassword: admin
+AdminEmail: admin@admin.ru
+
+Logger:
+  Encoding: console
+  Level: info
+  File: tech.log

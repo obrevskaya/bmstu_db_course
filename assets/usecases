@@ -1,0 +1,246 @@
+<mxfile host="app.diagrams.net" modified="2023-09-16T06:25:29.643Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 YaBrowser/23.3.1.912 Yowser/2.5 Safari/537.36" etag="OosI8jGgqMngn3PPG-hm" version="21.7.5" type="device">
+  <diagram name="Страница — 1" id="B-Iyv0IUyVw-rLCiwtGn">
+    <mxGraphModel dx="1733" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-1" value="Зарегистрированный &lt;br&gt;пользователь" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="925" width="90" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-2" value="Просмотр ассортимента вин" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="560" y="630" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-3" value="Добавить вино в заказ" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="560" y="730" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-4" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="1130" as="sourcePoint" />
+            <mxPoint x="470" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-5" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="1130" as="sourcePoint" />
+            <mxPoint x="470" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-6" value="Удалить вино из заказа" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="560" y="820" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-7" value="Оформить заказ" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="560" y="910" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-8" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="1130" as="sourcePoint" />
+            <mxPoint x="470" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-9" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="1130" as="sourcePoint" />
+            <mxPoint x="470" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-10" value="Оформить заказ со списанием баллов" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="560" y="1010" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-11" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="1220" as="sourcePoint" />
+            <mxPoint x="470" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-13" value="добавить вино в &quot;любимое&quot;" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="560" y="1120" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-15" value="удалить вино из &quot;любимое&quot;" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="560" y="1220" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;strokeColor=none;" parent="1" source="6k2T86o6NrGfHpiXY_XK-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-18" value="вывести вина из &quot;любимое&quot;" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="560" y="1320" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-19" value="Незарегистрированный &lt;br&gt;пользователь" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-80" y="715" width="90" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-20" value="Просмотр ассортимента вин" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="167" y="830" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-21" value="Регистрация" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="167" y="650" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-22" value="Авторизация" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="167" y="740" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-23" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="6k2T86o6NrGfHpiXY_XK-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="780" as="sourcePoint" />
+            <mxPoint x="-20" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-24" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="6k2T86o6NrGfHpiXY_XK-22" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="780" as="sourcePoint" />
+            <mxPoint x="-20" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-25" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-20" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-70" y="920" as="sourcePoint" />
+            <mxPoint x="40" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-26" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-97" y="1095" width="90" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-27" value="Просмотр ассортимента вин" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="123" y="1070" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-28" value="Покупка вина за рубли" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="123" y="1170" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-29" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-27" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-87" y="1300" as="sourcePoint" />
+            <mxPoint x="23" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-30" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-28" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-87" y="1300" as="sourcePoint" />
+            <mxPoint x="23" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-31" value="Покупка вина за баллы" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="123" y="1270" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-32" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-31" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-87" y="1170" as="sourcePoint" />
+            <mxPoint x="23" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-33" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-97" y="1095" width="90" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-34" value="Просмотр ассортимента вин" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="123" y="1070" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-35" value="Покупка вина за рубли" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="123" y="1170" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-36" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-34" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-87" y="1300" as="sourcePoint" />
+            <mxPoint x="23" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-37" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-35" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-87" y="1300" as="sourcePoint" />
+            <mxPoint x="23" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-38" value="Покупка вина за баллы" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="123" y="1270" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-39" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-38" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-87" y="1170" as="sourcePoint" />
+            <mxPoint x="23" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-40" value="Администратор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-97" y="1095" width="90" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-41" value="Просмотр ассортимента вин" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="123" y="1070" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-42" value="Покупка вина за рубли" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="123" y="1170" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-43" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-41" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-87" y="1300" as="sourcePoint" />
+            <mxPoint x="23" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-44" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-42" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-87" y="1300" as="sourcePoint" />
+            <mxPoint x="23" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-45" value="Покупка вина за баллы" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="123" y="1270" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-46" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-45" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-87" y="1170" as="sourcePoint" />
+            <mxPoint x="23" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-47" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-97" y="1095" width="90" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-48" value="Добавляет вино в ассортимент" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="123" y="1070" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-49" value="Удаляет вино из ассортимента" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="123" y="1170" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-50" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-48" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-87" y="1300" as="sourcePoint" />
+            <mxPoint x="23" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-51" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-49" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-87" y="1300" as="sourcePoint" />
+            <mxPoint x="23" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-52" value="Изменяет вино в ассортименте" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="123" y="1270" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-53" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6k2T86o6NrGfHpiXY_XK-52" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-87" y="1170" as="sourcePoint" />
+            <mxPoint x="23" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-54" value="Просматривает ассортимент вин" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="123" y="970" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6k2T86o6NrGfHpiXY_XK-55" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="6k2T86o6NrGfHpiXY_XK-54" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="23" y="1160" as="sourcePoint" />
+            <mxPoint x="-37" y="1230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

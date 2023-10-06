@@ -1,0 +1,27 @@
+\bibliography{biblio}
+
+\renewcommand\labelitemi{---}
+\renewcommand\labelitemii{---}
+
+\usepackage{tabularray}
+
+\usepackage{enumitem}
+\setenumerate[1]{label=\arabic*)}
+
+\newcommand{\specialcell}[2][c]{%
+ \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+ 
+\usepackage{listingsutf8}
+\lstset{columns=fixed,basicstyle=\small,breaklines=true,inputencoding=utf8,keywordstyle=\bfseries\underbar,frame=single,tabsize=2,xleftmargin=20pt,xrightmargin=5pt}
+\lstset{language=sql}
+\lstset{numbers=left,numberstyle=\small}
+
+\geometry{a4paper,left=3.1cm,right=1.1cm,
+    top=2cm,bottom=2cm,bindingoffset=0cm}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{pdfpages}
+
+\setlength{\parindent}{1.25cm}
+
+\usepackage{ragged2e}
+\justifying

@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: wintrigue
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: "wintrigue"
+      POSTGRES_USER: "wintrigue"
+      POSTGRES_PASSWORD: "password"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    ports:
+      - "5435:5432"
+    volumes:
+      - .:/var/lib/postgresql/data
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2G

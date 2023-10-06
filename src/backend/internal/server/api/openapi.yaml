@@ -1,0 +1,914 @@
+openapi: 3.0.0
+info:
+  title: API for ppo project
+  version: 0.0.1
+servers:
+- url: /
+paths:
+  /authorize:
+    post:
+      operationId: Authorize
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: authorize user
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: authorize error
+  /register:
+    post:
+      operationId: Register
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterRequest'
+        required: true
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RegisterResponse'
+          description: register user
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: register error
+  /wines:
+    get:
+      operationId: GetWines
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GetWinesRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetWinesResponse'
+          description: get wines
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: get wines error
+    post:
+      operationId: AddWine
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AddWineRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AddWineResponse'
+          description: add wine
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: add wine error
+    put:
+      operationId: UpdateWine
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Wine'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateWineResponse'
+          description: update wine
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: update wine error
+  /wines/{id}:
+    delete:
+      description: Delete wine
+      operationId: DeleteWine
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteWineResponse'
+          description: delete wine
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: delete wine error
+    get:
+      description: Get wine
+      operationId: GetWine
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Wine'
+          description: get wine
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: get wine error
+  /elems:
+    get:
+      operationId: GetByOrder
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GetByOrderRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Elems'
+          description: get by order element
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: get by order element error
+    post:
+      operationId: CreateElem
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateElemRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateElemResponse'
+          description: create element
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: create element error
+  /elems/{id}/decrease:
+    put:
+      operationId: DecreaseElem
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DecreaseElemResponse'
+          description: decrease element
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: decrease element error
+  /elems/{id}/add:
+    put:
+      operationId: AddElem
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AddElemResponse'
+          description: add element
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: add element error
+  /elems/{id}:
+    delete:
+      description: Delete elem
+      operationId: DeleteElem
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteElemResponse'
+          description: delete elem
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: delete elem error
+  /orders/{id}:
+    get:
+      operationId: GetOrder
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+          description: get order
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: get order error
+  /orders:
+    put:
+      operationId: PlaceOrder
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Order'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlaceOrderResponse'
+          description: place order
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: get order error
+  /bills/{id}:
+    put:
+      operationId: PayBill
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PayBillResponse'
+          description: pay bill
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: pay bill error
+  /users:
+    put:
+      operationId: UpdatePoints
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdatePointsRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RegisterResponse'
+          description: update points
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: update points error
+  /favourite/{id}:
+    get:
+      operationId: GetUserWines
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserWines'
+          description: get user wines
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: get user wines error
+  /favourite:
+    delete:
+      operationId: DeleteUserWine
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserWine'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteUserWineResponse'
+          description: delete user wine
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: delete user wine error
+    post:
+      operationId: CreateUserWine
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserWine'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateUserWineResponse'
+          description: create user wine
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: create user wine error
+components:
+  schemas:
+    AuthRequest:
+      example:
+        password: password
+        login: login
+      properties:
+        login:
+          type: string
+        password:
+          type: string
+      required:
+      - login
+      - password
+      title: AuthRequest
+      type: object
+    ErrorResponse:
+      properties:
+        message:
+          example: Cannot authorize.
+          type: string
+        systemMessage:
+          type: string
+      required:
+      - message
+      - systemMessage
+      title: ErrorResponse
+      type: object
+    RegisterRequest:
+      example:
+        password: password
+        login: login
+        fio: fio
+        email: email
+        points: 0
+        status: status
+      properties:
+        login:
+          type: string
+        password:
+          type: string
+        fio:
+          type: string
+        email:
+          type: string
+        points:
+          type: integer
+        status:
+          type: string
+      required:
+      - email
+      - fio
+      - login
+      - password
+      - status
+      title: RegisterRequest
+      type: object
+    User:
+      example:
+        password: password
+        id: id
+        login: login
+        fio: fio
+        email: email
+        points: points
+        status: status
+      properties:
+        id:
+          type: string
+        login:
+          type: string
+        password:
+          type: string
+        fio:
+          type: string
+        email:
+          type: string
+        points:
+          type: string
+        status:
+          type: string
+      required:
+      - email
+      - fio
+      - id
+      - login
+      - password
+      - points
+      - status
+      title: User
+      type: object
+    RegisterResponse:
+      example:
+        registered: true
+      properties:
+        registered:
+          type: boolean
+      required:
+      - registered
+      title: RegisterResponse
+      type: object
+    CreateElemResponse:
+      example:
+        created: true
+      properties:
+        created:
+          type: boolean
+      required:
+      - created
+      title: RegisterResponse
+      type: object
+    GetWinesRequest:
+      example:
+        limit: limit
+        skip: skip
+      properties:
+        limit:
+          type: string
+        skip:
+          type: string
+      required:
+      - limit
+      - skip
+      title: GetWinesRequest
+      type: object
+    GetWinesResponse:
+      example:
+        wines:
+        - strength: 6
+          year: 0
+          price: price
+          name: name
+          count: count
+          id: id
+          type: type
+        - strength: 6
+          year: 0
+          price: price
+          name: name
+          count: count
+          id: id
+          type: type
+      properties:
+        wines:
+          items:
+            $ref: '#/components/schemas/Wine'
+          type: array
+      required:
+      - wines
+      title: GetWinesResponse
+      type: object
+    AddWineRequest:
+      example:
+        strength: 6
+        year: 0
+        price: price
+        name: name
+        count: count
+        type: type
+      properties:
+        name:
+          type: string
+        count:
+          type: string
+        year:
+          type: integer
+        strength:
+          type: integer
+        price:
+          type: string
+        type:
+          type: string
+      required:
+      - count
+      - name
+      - price
+      - strength
+      - type
+      - year
+      title: Wine
+      type: object
+    Wine:
+      example:
+        strength: 6
+        year: 0
+        price: price
+        name: name
+        count: count
+        id: id
+        type: type
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        count:
+          type: string
+        year:
+          type: integer
+        strength:
+          type: integer
+        price:
+          type: string
+        type:
+          type: string
+      required:
+      - count
+      - id
+      - name
+      - price
+      - strength
+      - type
+      - year
+      title: Wine
+      type: object
+    CreateElemRequest:
+      example:
+        idWine: idWine
+        count: 0
+      properties:
+        idWine:
+          type: string
+        count:
+          type: integer
+      required:
+      - count
+      - idWine
+      title: CreateElemRequest
+      type: object
+    CreateUserWineResponse:
+      example:
+        created: true
+      properties:
+        created:
+          type: boolean
+      required:
+      - created
+      title: CreateUserWineRequest
+      type: object
+    DeleteUserWineResponse:
+      example:
+        deleted: true
+      properties:
+        deleted:
+          type: boolean
+      required:
+      - deleted
+      title: DeleteUserWineResponse
+      type: object
+    Elem:
+      example:
+        idOrder: idOrder
+        idWine: idWine
+        count: 0
+        id: id
+      properties:
+        id:
+          type: string
+        idOrder:
+          type: string
+        idWine:
+          type: string
+        count:
+          type: integer
+      required:
+      - count
+      - id
+      - idOrder
+      - idWine
+      title: Elem
+      type: object
+    Order:
+      example:
+        idUser: idUser
+        isPoints: isPoints
+        totalPrice: totalPrice
+        id: id
+        status: status
+      properties:
+        id:
+          type: string
+        idUser:
+          type: string
+        totalPrice:
+          type: string
+        isPoints:
+          type: string
+        status:
+          type: string
+      required:
+      - id
+      - idUser
+      - isPoints
+      - status
+      - totalPrice
+      title: Order
+      type: object
+    GetByOrderRequest:
+      example:
+        id: id
+      properties:
+        id:
+          type: string
+      required:
+      - id
+      title: GetByOrderRequest
+      type: object
+    Elems:
+      example:
+        elems:
+        - idOrder: idOrder
+          idWine: idWine
+          count: 0
+          id: id
+        - idOrder: idOrder
+          idWine: idWine
+          count: 0
+          id: id
+      properties:
+        elems:
+          items:
+            $ref: '#/components/schemas/Elem'
+          type: array
+      required:
+      - elems
+      title: Elems
+      type: object
+    UserWines:
+      example:
+        userWines:
+        - idUser: idUser
+          idWine: idWine
+        - idUser: idUser
+          idWine: idWine
+      properties:
+        userWines:
+          items:
+            $ref: '#/components/schemas/UserWine'
+          type: array
+      required:
+      - userWines
+      title: UserWines
+      type: object
+    UserWine:
+      example:
+        idUser: idUser
+        idWine: idWine
+      properties:
+        idUser:
+          type: string
+        idWine:
+          type: string
+      required:
+      - idUser
+      - idWine
+      title: UserWine
+      type: object
+    AddElemRequest:
+      properties:
+        id:
+          type: string
+      required:
+      - id
+      title: AddElemRequest
+      type: object
+    AddElemResponse:
+      example:
+        added: true
+      properties:
+        added:
+          type: boolean
+      required:
+      - added
+      title: AddElemResponse
+      type: object
+    DecreaseElemRequest:
+      properties:
+        id:
+          type: string
+      required:
+      - id
+      title: DecreaseElemRequest
+      type: object
+    DecreaseElemResponse:
+      example:
+        decreased: true
+      properties:
+        decreased:
+          type: boolean
+      required:
+      - decreased
+      title: DecreaseElemResponse
+      type: object
+    DeleteElemResponse:
+      example:
+        deleted: true
+      properties:
+        deleted:
+          type: boolean
+      required:
+      - deleted
+      title: DeleteElemResponse
+      type: object
+    GetOrderRequest:
+      properties:
+        id:
+          type: string
+      required:
+      - id
+      title: GetOrderResponse
+      type: object
+    PlaceOrderResponse:
+      example:
+        placed: true
+      properties:
+        placed:
+          type: boolean
+      required:
+      - placed
+      title: PlaceOrderResponse
+      type: object
+    PayBillResponse:
+      example:
+        payed: true
+      properties:
+        payed:
+          type: boolean
+      required:
+      - payed
+      title: PayBillResponse
+      type: object
+    AddWineResponse:
+      example:
+        added: true
+      properties:
+        added:
+          type: boolean
+      required:
+      - added
+      title: AddWineResponse
+      type: object
+    DeleteWineResponse:
+      example:
+        deleted: true
+      properties:
+        deleted:
+          type: boolean
+      required:
+      - deleted
+      title: DeleteWineResponse
+      type: object
+    UpdateWineResponse:
+      example:
+        updated: true
+      properties:
+        updated:
+          type: boolean
+      required:
+      - updated
+      title: UpdateWineResponse
+      type: object
+    UpdatePointsRequest:
+      example:
+        id: id
+        points: 0
+      properties:
+        id:
+          type: string
+        points:
+          type: integer
+      required:
+      - id
+      - points
+      title: UpdatePointsRequest
+      type: object
